@@ -1,6 +1,6 @@
 //Gerando o número secreto
 let numerosSorteados = [];
-let numeroLimiteLista = 100;
+let numeroLimiteLista = 1000;
 let numeroSecreto = gerarNumeroAleatorio();
 console.log(numeroSecreto);
 
@@ -34,7 +34,7 @@ function exibirTextonaTela(tag, texto){
 //exibindo o titulo e o paragrafo na tela
 function exibirTextoinicial(){
     exibirTextonaTela('h1', 'Jogo do número secreto');
-    exibirTextonaTela('p', 'Escolha um número entre 1 e 100:');
+    exibirTextonaTela('p', `Escolha um número entre 1 e ${numeroLimiteLista}:`);
 }
 
 exibirTextoinicial();   
